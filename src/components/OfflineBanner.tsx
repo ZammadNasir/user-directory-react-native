@@ -58,6 +58,7 @@ export function OfflineBanner() {
         {
           backgroundColor,
           paddingTop: top + 10,
+          paddingBottom: 10,
           transform: [{ translateY }],
         },
       ]}
@@ -69,12 +70,6 @@ export function OfflineBanner() {
 
 const styles = StyleSheet.create({
   banner: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    zIndex: 50,
-    paddingBottom: 10,
     paddingHorizontal: 16,
   },
   message: {

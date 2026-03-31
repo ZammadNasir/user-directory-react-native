@@ -26,9 +26,11 @@ function AppShell() {
           style={[styles.container, { backgroundColor: colors.background }]}
           edges={['left', 'right']}
         >
-          <AppNavigator />
+          <OfflineBanner />
+          <View style={styles.container}>
+            <AppNavigator />
+          </View>
         </SafeAreaView>
-        <OfflineBanner />
       </View>
     </SafeAreaProvider>
   );
